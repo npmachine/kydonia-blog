@@ -1,0 +1,15 @@
+npmachine:
+  nickname: npmachine
+  name: Soonsang Hong
+  site: https://kydonia.net
+  avatar: assets/images/npmachine.png
+  bio: 'a rails engineer'
+  location: 'Seoul, Korea'
+  email: engineered.design@gmail.com
+  # GitHub nick for use in follow button in author block.
+  github: npmachine
+  social:
+    - title: 'github'
+      url: 'https://github.com/npmachine'
+    - title: 'facebook'
+      url: 'https://www.facebook.com/npmachine'

@@ -1,0 +1,19 @@
+{% if author.avatar %}
+<figure class="author-image">
+    <a class="img" href="{{ site.baseurl }}author/{{ author.nickname }}" style="background-image: url({{ site.baseurl }}{{ author.avatar }})"><span class="hidden">{{ author.nickname }}'s Picture</span></a>
+</figure>
+{% endif %}
+
+<section class="author">
+    <h4><a href="{{ site.baseurl }}author/{{ author.nickname }}">{{ author.nickname }}</a></h4>
+
+    {% if author.bio %}
+        <p> {{ author.bio }}</p>
+    {% else %}
+        <p>Read <a href="{{ site.baseurl }}author/{{ author.nickname }}">more posts</a> by this author.</p>
+    {% endif %}
+    <div class="author-meta">
+        {% if author.location %}<span class="author-location icon-location"> {{ author.location }}</span>{% endif %}
+        {% if author.site %}<span class="author-link icon-link"><a href="{{ author.site }}"> {{ site.site }}</a></span>{% endif %}
+    </div>
+</section>
